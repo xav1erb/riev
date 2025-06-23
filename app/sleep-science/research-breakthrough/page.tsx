@@ -1,12 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { Button } from "../components/Button";
-import { Card } from "../components/Card";
-import { Container } from "../components/Container";
-import { Layout, Section, ContentBlock } from "../components/Layout";
-import { Heading1, Heading2, Heading3, Paragraph, SmallText, Highlight } from "../components/Typography";
-import { ProductFeatures } from "../components/Accordion";
+import { Button } from "../../components/Button";
+import { Card } from "../../components/Card";
+import { Container } from "../../components/Container";
+import { Layout, Section, ContentBlock } from "../../components/Layout";
+import { Heading1, Heading2, Heading3, Paragraph, SmallText, Highlight } from "../../components/Typography";
+import { ProductFeatures } from "../../components/Accordion";
 import { useEffect, useState } from "react";
 
 export default function BlogPage2() {
