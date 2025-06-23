@@ -1,0 +1,45 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Beige background -->
+  <rect width="1200" height="800" fill="#f0e7d8" />
+  
+  <!-- First bottle - Light beige with gold cap -->
+  <g transform="translate(180, 400)">
+    <rect x="-40" y="-200" width="80" height="200" rx="20" fill="#f3e8d8" />
+    <ellipse cx="0" cy="-200" rx="40" ry="10" fill="#f3e8d8" />
+    <circle cx="0" cy="-230" r="30" fill="#e8c478" />
+  </g>
+  
+  <!-- Second bottle - Cream tube -->
+  <g transform="translate(400, 400)">
+    <rect x="-30" y="-180" width="60" height="180" rx="10" fill="#f7efe2" />
+    <path d="M-30,-180 C-30,-195 30,-195 30,-180 L30,-160 L-30,-160 Z" fill="#e8d1b5" />
+    <rect x="-30" y="0" width="60" height="10" rx="5" fill="#e8d1b5" />
+  </g>
+  
+  <!-- Third bottle - Medium gold with black pump -->
+  <g transform="translate(600, 400)">
+    <rect x="-40" y="-190" width="80" height="190" rx="20" fill="#d9b894" />
+    <ellipse cx="0" cy="-190" rx="40" ry="10" fill="#d9b894" />
+    <path d="M-10,-190 L10,-190 L10,-240 C10,-250 5,-255 0,-250 C-5,-255 -10,-250 -10,-240 Z" fill="#333333" />
+    <rect x="-17" y="-210" width="34" height="20" rx="5" fill="#333333" />
+  </g>
+  
+  <!-- Fourth bottle - Dark tan tube -->
+  <g transform="translate(800, 400)">
+    <rect x="-30" y="-180" width="60" height="180" rx="10" fill="#c98e6b" />
+    <path d="M-30,-180 C-30,-195 30,-195 30,-180 L30,-160 L-30,-160 Z" fill="#c98e6b" />
+    <rect x="-30" y="0" width="60" height="10" rx="5" fill="#ac7451" />
+  </g>
+  
+  <!-- Fifth bottle - Dark brown with white cap -->
+  <g transform="translate(1020, 400)">
+    <rect x="-40" y="-190" width="80" height="190" rx="20" fill="#8b5a3e" />
+    <ellipse cx="0" cy="-190" rx="40" ry="10" fill="#8b5a3e" />
+    <circle cx="0" cy="-225" r="35" fill="#ffffff" />
+  </g>
+  
+  <!-- Text at bottom -->
+  <text x="600" y="700" font-family="serif" font-size="40" text-anchor="middle" fill="#333333">
+    5 Premium Foundations voor Rijpere Huid
+  </text>
+</svg> 
