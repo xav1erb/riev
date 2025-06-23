@@ -95,59 +95,61 @@ export default function BlogPage() {
   return (
     <Layout>
       {/* Header with logo */}
-      <header className="bg-white py-3 px-6 flex justify-center border-b border-gray-200">
+      <header className="bg-white py-6 px-6 flex justify-center border-b border-gray-200">
         <Container>
           <div className="text-center">
-            <div className="text-sm uppercase tracking-wider text-gray-700">THE</div>
-            <h1 className="font-serif text-3xl md:text-4xl font-medium text-gray-800">Sleep Science</h1>
-            <div className="uppercase tracking-widest text-xl font-medium text-gray-700">REVIEW</div>
+            <div className="text-sm font-semibold tracking-[0.2em] text-amber-700 mb-1">THE</div>
+            <h1 className="font-serif text-4xl md:text-5xl font-medium text-gray-900 mb-1">Sleep Science</h1>
+            <div className="tracking-[0.15em] text-xl font-medium text-amber-700">REVIEW</div>
           </div>
         </Container>
       </header>
 
       {/* Main content */}
-      <div className="bg-[#f8fafe] py-12 md:pt-16 md:pb-20">
+      <div className="bg-gradient-to-b from-amber-50/50 to-white py-12 md:pt-16 md:pb-20">
         <Container className="max-w-[960px] mx-auto px-4">
-          <h1 className="text-3xl md:text-[42px] font-bold leading-[1.3] text-center mb-4">
-            Oxford Researchers Test Popular Sleep Supplements – <br />
-            <span className="text-[#4B4B6B] underline decoration-2 underline-offset-8 mt-1 inline-block">The Results Will Surprise You</span>
+          <h1 className="text-3xl md:text-[42px] font-bold leading-tight text-center mb-6">
+            Oxford Researchers Test Popular Sleep Supplements
+            <span className="block mt-3 text-[#1b2c3b] bg-gradient-to-r from-amber-100 to-amber-50 px-4 py-2 rounded-lg">The Results Will Surprise You</span>
           </h1>
 
-          <div className="flex justify-center mb-8 md:mb-12">
-            <div className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-6 text-[15px] text-[#7a7a7a]">
-              <div className="flex items-center gap-2">
+          <div className="flex justify-center mb-10 md:mb-14">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-8">
+              <div className="flex items-center gap-2.5 bg-white px-4 py-2 rounded-full shadow-sm">
                 <span className="inline-block w-5 h-5 text-center">⚖️</span>
-                <span>Independent Review</span>
+                <span className="font-medium text-gray-800">Independent Review</span>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2.5 bg-white px-4 py-2 rounded-full shadow-sm">
                 <span className="inline-block w-5 h-5 text-center">🛡️</span>
-                <span>No Sponsored Content</span>
+                <span className="font-medium text-gray-800">No Sponsored Content</span>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2.5 bg-white px-4 py-2 rounded-full shadow-sm">
                 <span className="inline-block w-5 h-5 text-center">👨‍🔬</span>
-                <span>Expert Analysis</span>
+                <span className="font-medium text-gray-800">Expert Analysis</span>
               </div>
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row justify-center gap-6 md:gap-8">
+          <div className="flex flex-col md:flex-row justify-center gap-6 md:gap-8 mb-12">
             {/* Author section - single card with profile image */}
-            <div className="w-full bg-[#f8fafe] shadow-md rounded-lg p-6 border border-gray-100">
-              <div className="flex items-start gap-5">
+            <div className="w-full bg-white shadow-lg rounded-xl p-6 border border-amber-100">
+              <div className="flex items-start gap-6">
                 <Image 
                   src="/images/Simon.png" 
                   alt="Professor Simon Kyle" 
-                  width={70}
-                  height={70}
-                  className="rounded-full border-2 border-gray-100"
+                  width={90}
+                  height={90}
+                  className="rounded-full border-2 border-amber-50"
                 />
-                <div>
-                  <p className="font-bold text-black text-lg mb-1">By Professor Simon Kyle | April 17, 2025 | 09:48 AM</p>
-                  <p className="text-gray-700 mb-0 text-base leading-relaxed">
-                    Professor Simon Kyle is a leading expert in sleep science with over 15 years of experience. 
-                    As Professor of Experimental and Clinical Sleep Research at Oxford, he has tested dozens of sleep supplements 
-                    and shares his surprising findings about the latest breakthrough in sleep science.
-                  </p>
+                <div className="flex-1">
+                  <div className="flex flex-col">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-1">Professor Simon Kyle</h3>
+                    <span className="text-amber-600 text-base mb-3">April 17, 2025</span>
+                    <p className="text-gray-700 text-lg leading-relaxed">
+                      Professor of Experimental and Clinical Sleep Research at Oxford with over 15 years of experience. 
+                      He has tested dozens of sleep supplements and shares his surprising findings about the latest breakthrough in sleep science.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -156,19 +158,17 @@ export default function BlogPage() {
       </div>
 
       {/* Navigation tabs */}
-      <div className="w-full bg-[#1b2c3b] text-white mt-8">
+      <div className="sticky top-0 z-50 w-full bg-[#1b2c3b] text-white shadow-lg">
         <div className="max-w-[960px] mx-auto flex">
-          <div className="flex-1 py-2 px-6 flex justify-center">
-            <a href="#research-method" className="hover:underline flex items-center">
+          <div className="flex-1 py-3 px-6 flex justify-center border-r border-white/10">
+            <a href="#research-method" className="hover:text-amber-300 transition-colors flex items-center">
               <span className="text-lg font-medium">Research Method</span>
             </a>
           </div>
           
-          <div className="w-px bg-white/30 h-full"></div>
-          
-          <div className="flex-1 py-2 px-6 flex justify-center">
-            <a href="#test-winner" className="hover:underline flex items-center">
-              <span className="text-2xl mr-2">🏆</span>
+          <div className="flex-1 py-3 px-6 flex justify-center bg-amber-600">
+            <a href="#test-winner" className="hover:text-white/90 transition-colors flex items-center gap-2">
+              <span className="text-2xl">🏆</span>
               <span className="text-lg font-medium">Top Rated</span>
             </a>
           </div>
@@ -1227,97 +1227,125 @@ export default function BlogPage() {
       <div className="w-full bg-white py-12">
         <div className="max-w-4xl mx-auto px-6">
           {/* Introduction to foundations */}
-          <div className="mt-12 max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-black mb-6">The Breakthrough in Sleep Science</h2>
-            <p className="text-black mb-6">
-              At one point, I could barely get a good night's sleep: My mind racing at bedtime, tossing and turning for hours, and waking up feeling like I hadn't slept at all. Traditional sleep aids were an absolute nightmare.
-            </p>
-            <p className="text-black mb-6">
-              I hated them. They drove me crazy. Everything was either too strong or ineffective. Instead of helping, these products seemed to only make my sleep problems worse. Too sedating, too harsh, constant grogginess – and the feeling that they were making my sleep patterns even more irregular.
-            </p>
-            <p className="text-black mb-6">
-              That's when I reached the point where I didn't want to take sleep supplements anymore – I simply didn't feel good about them, and things were only getting worse.
-            </p>
-            <p className="text-black mb-8">
-              A few days later, my sleep specialist said: "Try the new generation of sleep supplements. They're revolutionizing sleep science."
-            </p>
-            <p className="text-black mb-8">
-              I was skeptical – but also at my wit's end. So I dove into the research and ordered the most promising options. Three brands that consistently topped the reviews: RIEV, Natrol, and Nature Made.
-            </p>
+          <div className="bg-white rounded-2xl p-8 shadow-lg border border-amber-100 mb-12">
+            <h2 className="text-3xl font-bold mb-6 text-center text-gray-900">The Breakthrough in Sleep Science</h2>
+            
+            <div className="space-y-6 max-w-2xl mx-auto">
+              <div className="bg-amber-50/50 p-6 rounded-xl border border-amber-100">
+                <p className="text-lg text-gray-700 italic">
+                  "At one point, I could barely get a good night's sleep: My mind racing at bedtime, tossing
+                  and turning for hours, and waking up feeling like I hadn't slept at all. Traditional sleep aids
+                  were an absolute nightmare."
+                </p>
+              </div>
+
+              <p className="text-lg text-gray-700">
+                I hated them. They drove me crazy. Everything was either too strong or ineffective.
+                Instead of helping, these products seemed to only make my sleep problems worse. Too
+                sedating, too harsh, constant grogginess – and the feeling that they were making my sleep
+                patterns even more irregular.
+              </p>
+
+              <p className="text-lg text-gray-700">
+                That's when I reached the point where I didn't want to take sleep supplements anymore – I
+                simply didn't feel good about them, and things were only getting worse.
+              </p>
+
+              <div className="bg-gradient-to-r from-amber-600 to-amber-500 p-6 rounded-xl text-white">
+                <p className="text-lg font-medium mb-2">
+                  A few days later, my sleep specialist said: "Try the new generation of sleep supplements.
+                  They're revolutionizing sleep science."
+                </p>
+              </div>
+
+              <p className="text-lg text-gray-700">
+                I was skeptical – but also at my wit's end. So I dove into the research and ordered the
+                most promising options. Three brands that consistently topped the reviews: RIEV, Natrol,
+                and Nature Made.
+              </p>
+            </div>
           </div>
           
           {/* What to look for - Pros */}
-          <div className="mb-10">
-            <h2 className="text-2xl font-bold text-black mb-6">
-              What to Look for in Sleep Supplements
-            </h2>
+          <div className="bg-gradient-to-br from-amber-50 to-white rounded-2xl p-8 shadow-lg border border-amber-100 mb-12">
+            <h2 className="text-3xl font-bold mb-8 text-center text-gray-900">What to Look for in Sleep Supplements</h2>
             
-            <div className="space-y-4">
-              <div className="flex gap-3">
-                <div className="text-green-600 font-bold mt-1">✅</div>
+            <div className="space-y-8 max-w-2xl mx-auto">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-green-100 rounded-full text-green-700">✓</div>
                 <div>
-                  <h3 className="font-bold text-lg text-black">Optimal Dosage</h3>
-                  <p className="text-black">
-                    Ensure the supplement contains scientifically-proven doses. Too much or too little of active ingredients can affect effectiveness and side effects.
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Optimal Dosage</h3>
+                  <p className="text-gray-700 text-lg">
+                    The ideal melatonin dosage should be between 0.5-2mg. This range has been proven to be most effective
+                    for promoting natural sleep without causing morning grogginess.
                   </p>
                 </div>
               </div>
-              
-              <div className="flex gap-3">
-                <div className="text-green-600 font-bold mt-1">✅</div>
+
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-green-100 rounded-full text-green-700">✓</div>
                 <div>
-                  <h3 className="font-bold text-lg text-black">Natural Formula</h3>
-                  <p className="text-black">
-                    Look for supplements with clean, natural ingredients that support your body's sleep cycle without harsh chemicals or artificial additives.
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Natural Formula</h3>
+                  <p className="text-gray-700 text-lg">
+                    Look for supplements with clean, natural ingredients that support your body's sleep cycle. 
+                    Avoid artificial additives that could interfere with sleep quality.
                   </p>
                 </div>
               </div>
-              
-              <div className="flex gap-3">
-                <div className="text-green-600 font-bold mt-1">✅</div>
+
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-green-100 rounded-full text-green-700">✓</div>
                 <div>
-                  <h3 className="font-bold text-lg text-black">Clinical Validation</h3>
-                  <p className="text-black">
-                    Choose products backed by scientific research and clinical studies that demonstrate both effectiveness and safety.
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Clinical Validation</h3>
+                  <p className="text-gray-700 text-lg">
+                    Choose products backed by scientific research and clinical studies that demonstrate both effectiveness 
+                    and safety for long-term use.
                   </p>
                 </div>
               </div>
             </div>
           </div>
           
-          {/* What to avoid - Cons */}
-          <div className="mb-6">
-            <h2 className="text-2xl font-bold text-black mb-6">
-              Warning Signs to Watch For in Sleep Supplements
-            </h2>
+          {/* Warning Signs Section */}
+          <div className="bg-gradient-to-br from-rose-50/30 to-white rounded-2xl p-8 shadow-lg border border-rose-100/50 mb-12">
+            <h2 className="text-3xl font-bold mb-8 text-center text-gray-900">Warning Signs to Watch For in Sleep Supplements</h2>
             
-            <div className="space-y-4">
-              <div className="flex gap-3">
-                <div className="text-red-600 font-bold mt-1">❌</div>
+            <div className="space-y-6 max-w-2xl mx-auto">
+              <div className="flex items-start gap-4 p-6 rounded-xl bg-white border border-rose-100/50">
+                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-rose-50 rounded-full">
+                  <span className="text-rose-600 text-xl">×</span>
+                </div>
                 <div>
-                  <h3 className="font-bold text-lg text-black">Excessive Melatonin Dosage</h3>
-                  <p className="text-black">
-                    Many supplements contain 5-10mg of melatonin, which can disrupt natural sleep patterns and cause morning grogginess.
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Excessive Melatonin</h3>
+                  <p className="text-gray-700 text-lg leading-relaxed">
+                    Many brands use 5-10mg of melatonin, which can lead to grogginess and disrupted sleep cycles. 
+                    This is far above the recommended dosage for effective sleep support.
                   </p>
                 </div>
               </div>
-              
-              <div className="flex gap-3">
-                <div className="text-red-600 font-bold mt-1">❌</div>
+
+              <div className="flex items-start gap-4 p-6 rounded-xl bg-white border border-rose-100/50">
+                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-rose-50 rounded-full">
+                  <span className="text-rose-600 text-xl">×</span>
+                </div>
                 <div>
-                  <h3 className="font-bold text-lg text-black">Artificial Ingredients</h3>
-                  <p className="text-black">
-                    Avoid products filled with artificial colors, flavors, or preservatives that might interfere with sleep quality.
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Artificial Ingredients</h3>
+                  <p className="text-gray-700 text-lg leading-relaxed">
+                    Some products contain unnecessary fillers, artificial colors, and preservatives that may 
+                    interfere with your sleep quality and overall health.
                   </p>
                 </div>
               </div>
-              
-              <div className="flex gap-3">
-                <div className="text-red-600 font-bold mt-1">❌</div>
+
+              <div className="flex items-start gap-4 p-6 rounded-xl bg-white border border-rose-100/50">
+                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-rose-50 rounded-full">
+                  <span className="text-rose-600 text-xl">×</span>
+                </div>
                 <div>
-                  <h3 className="font-bold text-lg text-black">Single-Ingredient Formulas</h3>
-                  <p className="text-black">
-                    Products that rely on just one ingredient often miss the complex nature of sleep, leading to incomplete results.
+                  <h3 className="text-xl font-bold mb-2 text-gray-900">Incomplete Formulas</h3>
+                  <p className="text-gray-700 text-lg leading-relaxed">
+                    Many supplements rely solely on melatonin, missing other crucial sleep-supporting nutrients 
+                    like magnesium, L-theanine, and herbs that help with relaxation.
                   </p>
                 </div>
               </div>
